@@ -34,9 +34,12 @@ void sortArray(std::vector<int> array){
 
     for (int i = 0; i < array.size(); i++)
     {
-        for (int j = 0; j < finalarray; j++)
+        for (int j = 0; j < finalarray.size(); j++)
         {
-            /* code */
+            if(array[i]<finalarray[j]){
+
+            }
+            if(j==finalarray.size()){}
         }
         
     }
