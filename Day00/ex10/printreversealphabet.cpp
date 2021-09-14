@@ -10,7 +10,7 @@ int ord(char c){
 }
 
 int main(){
-    for (int i = ord('a'); i <= ord('z'); i++)
+    for (int i = ord('z'); i <= ord('a'); i++)
     {
         std::cout << chr(i);
     }
