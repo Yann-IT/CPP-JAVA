@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 
+
 void round(int playerwin, int aiwin);
 
 std::string name(){
@@ -39,12 +40,12 @@ void round(int playerwin, int aiwin){
     std::cin >> play;
 
     std::cout << "AI play : " << AIplay << std::endl;
-    if((play+1)%3 == AIplay){
+    if((play+1)%3 == AIplay%3){
         //ai won
         std::cout << "AI win the round \n";
         aiwin++;
         
-    }else if((AIplay+1)%3 == play){
+    }else if((AIplay+1)%3 == play%3){
         //player won
         std::cout << "Player win the round \n";
         playerwin++;

@@ -1,4 +1,6 @@
 #include <iostream>
+#include <time.h>
+
 void createarray(int* array, int len){
     for (int i = 0; i < len; i++)
     {
@@ -24,10 +26,11 @@ int search(int* array, int c, int len){
     
 }
 int main(){
+    srand(time(NULL));
     int len = 5;
     int array[len];
     createarray(array, len);
     displayarray(array, len);
-    int n = search(array, array[2], len);
+    int n = search(array, 2, len);
     std::cout << "Place dans l'array : "<<n<<std::endl;
 }
