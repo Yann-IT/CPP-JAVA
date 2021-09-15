@@ -6,6 +6,16 @@
 int random(int min, int max){
     return rand() % max + min;
 }
+
+void displayArray(std::vector<int> array){
+    std::cout << "[ ";
+    for (int i = 0; i < array.size(); i++)
+    {
+        (i+1<array.size())?std::cout << array[i]<< ", " : std::cout << array[i];
+    }
+    std::cout << "] \n"<< std::endl;
+}
+
 std::vector<int> addat(std::vector<int> array, int el, int place){
     std::vector<int> finalarray;
     for (int i = 0; i < place; i++)
@@ -19,14 +29,6 @@ std::vector<int> addat(std::vector<int> array, int el, int place){
     }
     return finalarray;
     
-}
-void displayArray(std::vector<int> array){
-    std::cout << "[ ";
-    for (int i = 0; i < array.size(); i++)
-    {
-        (i+1<array.size())?std::cout << array[i]<< ", " : std::cout << array[i];
-    }
-    std::cout << "] \n"<< std::endl;
 }
 
 std::vector<int> sortArray(std::vector<int> array){

@@ -64,8 +64,6 @@ int smallest(){
 }
 
 int main(){
+    std::cout << "Exercice non terminé";
     return 0;
-    std::cout << {
-        
-    }
 }

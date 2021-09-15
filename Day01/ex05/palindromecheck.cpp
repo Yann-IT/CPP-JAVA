@@ -16,7 +16,7 @@ bool is_palindrome(std::string string){
     len = length(string);
     for (int i = 0; i < (int) len/2; i++)
     {
-        if(string[i]!=string[len-i]){
+        if(string[i]!=string[len-1-i]){
             is =false;
         }
     }
@@ -25,5 +25,5 @@ bool is_palindrome(std::string string){
 }
 
 int main(){
-    is_palindrome("kayak");
+    std::cout << is_palindrome("kayak") << std::endl;
 }
